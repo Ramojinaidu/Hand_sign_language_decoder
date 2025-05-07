@@ -1,0 +1,26 @@
+[project]
+name = "hand-sign-language-decoder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.12.9"
+dependencies = [
+    "mediapipe>=0.10.21",
+    "numpy>=1.26.4",
+    "pyright>=1.1.400",
+    "tensorflow[and-cuda]>=2.19.0",
+]
+
+
+[tool.pyright]
+defineConstant = { DEBUG = true }
+include = ["utils"]
+venvPath = "."
+venv = ".venv"
+
+reportMissingImports = "error"
+reportMissingTypeStubs = false
+
+pythonVersion = "3.12"
+pythonPlatform = "Linux"
+
